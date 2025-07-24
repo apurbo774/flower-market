@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flower Market</title>
+  <!-- ✅ Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Optional: Customize Tailwind configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#4CAF50',
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="font-sans text-gray-800 bg-white">
+  
+  <!-- ✅ Navbar Start -->
+  <nav class="flex items-center justify-between px-6 py-4 shadow-md">
+    <!-- Left: Logo -->
+    <div class="flex items-center">
+      <img src="./assets/logo.png" alt="Flower Market Logo" class="h-10 w-auto">
+    </div>
+
+    <!-- Right: Desktop Menu (hidden on small screens) -->
+    <ul class="hidden md:flex items-center gap-6 font-medium">
+      <li><a href="#" class="hover:text-green-600 transition-colors">Home</a></li>
+      <li><a href="#" class="hover:text-green-600 transition-colors">Shop</a></li>
+      <li><a href="#" class="hover:text-green-600 transition-colors">About</a></li>
+      <li><a href="#" class="hover:text-green-600 transition-colors">Contact</a></li>
+      <li class="flex items-center gap-1">
+        <img src="./assets/flower-store.png" alt="Cart Icon" class="h-5 w-5">
+        <span>Cart</span>
+      </li>
+    </ul>
+
+    <!-- Right: Mobile Cart Icon (visible only on small screens) -->
+    <div class="flex md:hidden items-center gap-1">
+      <img src="./assets/flower-store.png" alt="Cart Icon" class="h-5 w-5">
+      <span class="text-sm font-medium">Cart</span>
+    </div>
+  </nav>
+  <!-- ✅ Navbar End -->
+
+  <!-- ✅ Banner Section Start -->
+  <section class="flex flex-col-reverse md:flex-row items-center justify-between px-6 py-12 max-w-7xl mx-auto">
+    <!-- Left: Text Content -->
+    <div class="md:w-1/2 w-full text-center md:text-left">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        Bring Nature into Your Home
+      </h1>
+      <p class="text-lg text-gray-600 mb-6">
+        Discover our collection of beautiful, fresh plants and flowers. Make your home or workspace vibrant and full of life.
+      </p>
+      <a href="#" class="inline-block bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700 transition">
+        Shop Now
+      </a>
+    </div>
+
+    <!-- Right: Hero Image -->
+    <div class="md:w-1/2 w-full mb-8 md:mb-0">
+      <img src="./assets/hero-flower.png" alt="Hero Flower" class="w-full max-w-md mx-auto md:mx-0">
+    </div>
+  </section>
+  <!-- ✅ Banner Section End -->
+
+</body>
+</html>
